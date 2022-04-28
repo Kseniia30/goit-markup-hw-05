@@ -105,7 +105,9 @@ button {
 }
 .header-navigation-list {
 
-
+}
+.header-navigation-item {
+    position: relative;
 }
 .header-nav-item {
     font-family: 'Roboto';
@@ -156,10 +158,10 @@ button {
     color: var(--send-two);
 }
 .header-active::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     content: '';
+    position: absolute;
+    top: 28px;
+    left: 0;
     background-color: var(--after);
     border-radius: 2px;
     height: 4px;
