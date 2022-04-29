@@ -108,9 +108,10 @@ button {
 
 }
 .header-navigation-item {
-    position: relative;
+
 }
 .header-nav-item {
+    position: relative;
     font-family: 'Roboto';
     font-weight: 500;
     line-height: 1.1;
@@ -161,7 +162,7 @@ button {
 .header-active::after {
     content: '';
     position: absolute;
-    top: 28px;
+    bottom: 0;
     left: 0;
     background-color: var(--after);
     border-radius: 2px;
@@ -587,6 +588,8 @@ footer {
 }
 .portfolio-menu:hover .portfolio-overlay {
     transform: translateY(0);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list-head {
     color: var(--main-text-color);
